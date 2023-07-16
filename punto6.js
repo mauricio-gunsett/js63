@@ -1,15 +1,11 @@
 "use strict";
+let primerNumero;
+primerNumero = parseInt (prompt ("ingrese el primer número"));
+let segundoNumero;
+segundoNumero = parseInt (prompt ("ingrese el segundo número"));
 
-let numero1;
-numero1 = prompt ("ingrese un número");
-
-let numero2;
-numero1 = prompt ("ingrese otro número");
-
-
-
-if (numero1 > numero2) {
-    console.log ("el numero" + numero1 + "es mayor que" + numero2);
+if(primerNumero > segundoNumero) {
+    console.log ("El mayor es primer número");
 } else {
-    console.log ("el mayor es el número2")
+    console.log ("El mayor es el segundo número");
 }

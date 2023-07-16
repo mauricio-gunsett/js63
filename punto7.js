@@ -1,24 +1,20 @@
 "use strict";
 
 let numero1;
-numero1 = prompt ("ingrese el primer número");
-
-
+numero1 = prompt("Ingrese el primer número");
 let numero2;
-numero2 = prompt ("ingrese el segundo número");
-
-
+numero2 = prompt("Ingrese el segundo número");
 let numero3;
-numero3 = prompt ("ingrese el el tercer número");
+numero3 = prompt("Ingrese el tercer número");
 
-let mayor = numero1;
+let num1 = Number(numero1);
+let num2 = Number(numero2);
+let num3 = Number(numero3);
 
-if (numero2 > mayor) {
-    mayor = numero2;
+if (num1 > num2 && num1 > num3) {
+  console.log("El mayor es el 1");
+} else if (num1 < num2 && num2 > num3) {
+  console.log("el mayor es el 2");
+} else if (num1 < num3 && num3 > num2) {
+  console.log("el mayor es el 3");
 }
-
-if (numero3 > mayor) {
-    mayor = numero3;
-}
-
-console.log("El número mayor es: " + mayor);
